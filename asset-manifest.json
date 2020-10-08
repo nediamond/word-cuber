@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/word-cuber/static/css/main.223c1acf.chunk.css",
+    "main.js": "/word-cuber/static/js/main.82c3d74a.chunk.js",
+    "main.js.map": "/word-cuber/static/js/main.82c3d74a.chunk.js.map",
+    "runtime-main.js": "/word-cuber/static/js/runtime-main.c97fb078.js",
+    "runtime-main.js.map": "/word-cuber/static/js/runtime-main.c97fb078.js.map",
+    "static/js/2.31328791.chunk.js": "/word-cuber/static/js/2.31328791.chunk.js",
+    "static/js/2.31328791.chunk.js.map": "/word-cuber/static/js/2.31328791.chunk.js.map",
+    "index.html": "/word-cuber/index.html",
+    "precache-manifest.443e4bdfa440c02adb573833a2b308ee.js": "/word-cuber/precache-manifest.443e4bdfa440c02adb573833a2b308ee.js",
+    "service-worker.js": "/word-cuber/service-worker.js",
+    "static/css/main.223c1acf.chunk.css.map": "/word-cuber/static/css/main.223c1acf.chunk.css.map",
+    "static/js/2.31328791.chunk.js.LICENSE.txt": "/word-cuber/static/js/2.31328791.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c97fb078.js",
+    "static/js/2.31328791.chunk.js",
+    "static/css/main.223c1acf.chunk.css",
+    "static/js/main.82c3d74a.chunk.js"
+  ]
+}
