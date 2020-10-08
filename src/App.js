@@ -54,7 +54,7 @@ function cubifyWord(word) {
     retStr += "\n"
   }
 
-  retStr += spacedWord.split('').reverse().join('') + "\n"
+  retStr += spacedWord.split('').reverse().join('') + "\n";
 
   return retStr;
 }
