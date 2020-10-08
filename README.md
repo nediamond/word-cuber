@@ -1,4 +1,4 @@
-### https://nediamond.github.io/word-cuber/
+### https://www.wordcuber.com
 
 ## Available Scripts
 
