@@ -37,12 +37,13 @@ export default function WordCuber() {
    }
 
    return (
-      <div className='App'>
-         <header className='App-header'>
-            <input type='text' value={word} onChange={handleWordChange}></input>
-            <br />
+      <div className='container-fluid'>
+         <nav className='navbar navbar-expand-lg navbar-dark'>
+            <input className='mx-auto my-5' type='text' value={word} onChange={handleWordChange}></input>
+         </nav>
+         <div>
             <pre>{cubifyWord(word)}</pre>
-         </header>
+         </div>
       </div>
    )
 }
