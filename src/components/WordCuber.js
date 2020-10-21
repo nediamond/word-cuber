@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import cubifyWord from '../utils/cubifyWord';
 import '../App.css';
 
@@ -30,13 +31,16 @@ export default function WordCuber() {
       setWord(_word);
    }
 
+   const wordCube = cubifyWord(word);
    return (
       <div className='container-fluid'>
          <nav className='navbar navbar-expand-lg navbar-dark'>
             <input className='mx-auto my-5' type='text' value={word} onChange={handleWordChange}></input>
+            <CopyToClipboard text={wordCube}><button class="btn btn-dark ml-1"><i class="fa fa-cube"></i></button></CopyToClipboard>
+            <CopyToClipboard text={window.location.href}><button class="btn btn-dark ml-1"><i class="fa fa-link"></i></button></CopyToClipboard>
          </nav>
          <div>
-            <pre>{cubifyWord(word)}</pre>
+            <pre>{wordCube}</pre>
          </div>
       </div>
    )
