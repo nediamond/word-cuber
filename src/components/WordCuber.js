@@ -16,25 +16,18 @@ export default function WordCuber() {
    const decodedQueryWord = atob(decodeURI(queryWord));
 
    let [word, setWord] = React.useState(decodedQueryWord);
-   let [inputUsed, setInputUsed] = React.useState(false);
-
-   if (word !== decodedQueryWord) {
-      if (inputUsed) {
-         if (word === '') {
-            query.delete(WORD_KEY);
-         } else {
-            query.set(WORD_KEY, btoa(word));
-         }
-         history.replace({ pathname: '/', search: '?' + query.toString() });
-         setInputUsed(false);
-      } else {
-         setWord(decodedQueryWord);
-      }
-   }
 
    const handleWordChange = (event) => {
-      setInputUsed(true);
-      setWord(event.target.value);
+      const _word = event.target.value;
+
+      if (_word === '') {
+         query.delete(WORD_KEY);
+      } else {
+         query.set(WORD_KEY, btoa(_word));
+      }
+      history.replace({ pathname: '/', search: '?' + query.toString() });
+
+      setWord(_word);
    }
 
    return (
